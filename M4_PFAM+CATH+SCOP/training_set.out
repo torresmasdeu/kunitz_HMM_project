@@ -1,0 +1,292 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  kunitz_mod.hmm
+# target sequence database:        training_set.fasta
+# output directed to file:         training_set.out
+# Max sensitivity mode:            on [all heuristic filters off]
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       kunitz_mod  [M=51]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                  Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                  -----------
+    5.4e-59  186.6  45.9    5.5e-23   71.2  11.6    3.3  3  sp|P10646|TFPI1_HUMAN      Tissue factor pathway inhibitor OS
+    3.2e-47  148.8  39.2    2.6e-24   75.5   5.8    3.1  3  sp|P48307|TFPI2_HUMAN      Tissue factor pathway inhibitor 2 
+    1.6e-42  133.8  20.2    3.6e-24   75.0   3.8    2.2  2  sp|O43291|SPIT2_HUMAN      Kunitz-type protease inhibitor 2 O
+    5.2e-40  125.8  20.8    1.1e-22   70.2   5.5    2.8  2  sp|O43278|SPIT1_HUMAN      Kunitz-type protease inhibitor 1 O
+    2.5e-37  117.2  22.6    3.6e-22   68.7   5.1    2.4  2  sp|P02760|AMBP_HUMAN       Protein AMBP OS=Homo sapiens OX=96
+    3.7e-27   84.6   6.6    4.3e-27   84.4   6.6    1.1  1  sp|Q90WA1|VKT1_PSETT       Kunitz-type serine protease inhibi
+    6.5e-26   80.6   9.6    7.1e-26   80.5   9.6    1.0  1  sp|P31713|VKT1_STIHL       PI-stichotoxin-She2a OS=Stichodact
+      4e-25   78.1  10.1    4.5e-25   77.9  10.1    1.0  1  sp|P00980|VKTHA_DENAN      Kunitz-type serine protease inhibi
+    6.6e-25   77.4  11.9    7.3e-25   77.3  11.9    1.0  1  sp|A0A1Z0YU59|MAMB1_DENAN  Mambaquaretin-1 OS=Dendroaspis ang
+    1.1e-24   76.7   7.6    2.3e-24   75.7   7.6    1.6  1  sp|P05067|A4_HUMAN         Amyloid-beta precursor protein OS=
+    4.1e-24   74.9   5.6    5.1e-24   74.6   5.6    1.1  1  sp|P0C1X2|VKTS1_CONST      Kunitz-type conkunitzin-S1 OS=Conu
+    4.6e-24   74.7   6.7      7e-24   74.1   6.7    1.3  1  sp|P00974|BPT1_BOVIN       Pancreatic trypsin inhibitor OS=Bo
+    7.4e-24   74.0   8.5    8.4e-24   73.9   8.5    1.0  1  sp|P81658|VKTHC_DENAN      Kunitz-type serine protease inhibi
+    8.3e-24   73.9   9.3    1.9e-23   72.7   9.3    1.7  1  sp|P12111|CO6A3_HUMAN      Collagen alpha-3(VI) chain OS=Homo
+    2.8e-23   72.2   9.9    3.4e-23   71.9   9.9    1.1  1  sp|P00989|VKTH2_BUNMU      Kunitz-type serine protease inhibi
+      1e-18   57.6  10.7    1.3e-18   57.3  10.7    1.1  1  sp|G9I929|VKTA_MICTN       Kunitz-type neurotoxin MitTx-alpha
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|P10646|TFPI1_HUMAN  Tissue factor pathway inhibitor OS=Homo sapiens OX=9606 GN=TFPI PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   63.6   9.1   1.3e-20   1.3e-20       1      51 []      54     104 ..      54     104 .. 0.98
+   2 !   71.2  11.6   5.5e-23   5.5e-23       1      51 []     125     175 ..     125     175 .. 0.99
+   3 !   64.2   9.3   8.5e-21   8.5e-21       1      51 []     217     267 ..     217     267 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 63.6 bits;  conditional E-value: 1.3e-20
+             kunitz_mod   1 CklpadtgscrafikrfYYnskekkCerFvYgGcggNeNnFkteeeCrrtC 51 
+                            C  +ad g+c+a +krf++n  +++Ce+F+YgGc+gN+N+F++ eeC+++C
+  sp|P10646|TFPI1_HUMAN  54 CAFKADDGPCKAIMKRFFFNIFTRQCEEFIYGGCEGNQNRFESLEECKKMC 104
+                            88999********************************************** PP
+
+  == domain 2  score: 71.2 bits;  conditional E-value: 5.5e-23
+             kunitz_mod   1 CklpadtgscrafikrfYYnskekkCerFvYgGcggNeNnFkteeeCrrtC 51 
+                            C l++d+g cr++i+r++Yn+++k+CerF+YgGc gN+NnF+t eeC+++C
+  sp|P10646|TFPI1_HUMAN 125 CFLEEDPGICRGYITRYFYNNQTKQCERFKYGGCLGNMNNFETLEECKNIC 175
+                            99************************************************* PP
+
+  == domain 3  score: 64.2 bits;  conditional E-value: 8.5e-21
+             kunitz_mod   1 CklpadtgscrafikrfYYnskekkCerFvYgGcggNeNnFkteeeCrrtC 51 
+                            C+ pad g cra  +rfYYns  +kC++F+Y+GcggNeNnF++++eC r+C
+  sp|P10646|TFPI1_HUMAN 217 CLTPADRGLCRANENRFYYNSVIGKCRPFKYSGCGGNENNFTSKQECLRAC 267
+                            9*************************************************9 PP
+
+>> sp|P48307|TFPI2_HUMAN  Tissue factor pathway inhibitor 2 OS=Homo sapiens OX=9606 GN=TFPI2 PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   75.5   5.8   2.6e-24   2.6e-24       1      51 []      36      86 ..      36      86 .. 0.99
+   2 !   27.9   6.2   1.9e-09   1.9e-09       1      51 []      96     149 ..      96     149 .. 0.92
+   3 !   58.2  11.2   6.4e-19   6.4e-19       1      51 []     158     208 ..     158     208 .. 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 75.5 bits;  conditional E-value: 2.6e-24
+             kunitz_mod  1 CklpadtgscrafikrfYYnskekkCerFvYgGcggNeNnFkteeeCrrtC 51
+                           C+lp d+g+cra + r+YY++ +++C++F+YgGc+gN+NnF+t+e C+++C
+  sp|P48307|TFPI2_HUMAN 36 CLLPLDYGPCRALLLRYYYDRYTQSCRQFLYGGCEGNANNFYTWEACDDAC 86
+                           9*************************************************9 PP
+
+  == domain 2  score: 27.9 bits;  conditional E-value: 1.9e-09
+             kunitz_mod   1 Cklpadtg.scrafikrfYYnskekkCerFvYgGcggN..eNnFkteeeCrrtC 51 
+                            C l+  +  +c ++ +++++n +  +Ce+F+ gGc+ N  eN+F  e  C+  C
+  sp|P48307|TFPI2_HUMAN  96 CRLQVSVDdQCEGSTEKYFFNLSSMTCEKFFSGGCHRNriENRFPDEATCMGFC 149
+                            8888888669*************************998556**********998 PP
+
+  == domain 3  score: 58.2 bits;  conditional E-value: 6.4e-19
+             kunitz_mod   1 CklpadtgscrafikrfYYnskekkCerFvYgGcggNeNnFkteeeCrrtC 51 
+                            C+ p+d g c a ++r+Y+n+  ++C  F+Y+GcggN NnF + e+C+r+C
+  sp|P48307|TFPI2_HUMAN 158 CYSPKDEGLCSANVTRYYFNPRYRTCDAFTYTGCGGNDNNFVSREDCKRAC 208
+                            9************************************************** PP
+
+>> sp|O43291|SPIT2_HUMAN  Kunitz-type protease inhibitor 2 OS=Homo sapiens OX=9606 GN=SPINT2 PE=1 SV=2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   75.0   3.8   3.6e-24   3.6e-24       1      51 []      38      88 ..      38      88 .. 0.99
+   2 !   64.8   8.5   5.8e-21   5.8e-21       1      51 []     133     183 ..     133     183 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 75.0 bits;  conditional E-value: 3.6e-24
+             kunitz_mod  1 CklpadtgscrafikrfYYnskekkCerFvYgGcggNeNnFkteeeCrrtC 51
+                           C+ ++ +g+cra+++r++Yn ++++C+ FvYgGc+gN+Nn+ t+eeC ++C
+  sp|O43291|SPIT2_HUMAN 38 CLVSKVVGRCRASMPRWWYNVTDGSCQLFVYGGCDGNSNNYLTKEECLKKC 88
+                           999************************************************ PP
+
+  == domain 2  score: 64.8 bits;  conditional E-value: 5.8e-21
+             kunitz_mod   1 CklpadtgscrafikrfYYnskekkCerFvYgGcggNeNnFkteeeCrrtC 51 
+                            C  +a tg+cra+++r+Y++ ++++C++F+YgGc+gN+N +++ee C+  C
+  sp|O43291|SPIT2_HUMAN 133 CTANAVTGPCRASFPRWYFDVERNSCNNFIYGGCRGNKNSYRSEEACMLRC 183
+                            9999********************************************999 PP
+
+>> sp|O43278|SPIT1_HUMAN  Kunitz-type protease inhibitor 1 OS=Homo sapiens OX=9606 GN=SPINT1 PE=1 SV=2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   70.2   5.5   1.1e-22   1.1e-22       1      51 []     250     300 ..     250     300 .. 0.99
+   2 !   60.4   7.5   1.3e-19   1.3e-19       1      51 []     391     441 ..     391     441 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 70.2 bits;  conditional E-value: 1.1e-22
+             kunitz_mod   1 CklpadtgscrafikrfYYnskekkCerFvYgGcggNeNnFkteeeCrrtC 51 
+                            C+ ++++g+cr++++r+YY+++e+ C++FvYgGc gN+Nn+ +eeeC  +C
+  sp|O43278|SPIT1_HUMAN 250 CLASNKVGRCRGSFPRWYYDPTEQICKSFVYGGCLGNKNNYLREEECILAC 300
+                            999********************************************9999 PP
+
+  == domain 2  score: 60.4 bits;  conditional E-value: 1.3e-19
+             kunitz_mod   1 CklpadtgscrafikrfYYnskekkCerFvYgGcggNeNnFkteeeCrrtC 51 
+                            C   +dtg c+++i+r+YYn+  ++C+rF+YgGc gN+NnF+ e++C + C
+  sp|O43278|SPIT1_HUMAN 391 CVDLPDTGLCKESIPRWYYNPFSEHCARFTYGGCYGNKNNFEEEQQCLESC 441
+                            667789*******************************************99 PP
+
+>> sp|P02760|AMBP_HUMAN  Protein AMBP OS=Homo sapiens OX=9606 GN=AMBP PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   54.3   9.6   1.1e-17   1.1e-17       1      51 []     231     281 ..     231     281 .. 0.98
+   2 !   68.7   5.1   3.6e-22   3.6e-22       1      51 []     287     337 ..     287     337 .. 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 54.3 bits;  conditional E-value: 1.1e-17
+            kunitz_mod   1 CklpadtgscrafikrfYYnskekkCerFvYgGcggNeNnFkteeeCrrtC 51 
+                           C+l    g+c ++ +r++Yn +   Ce+F YgGc gN+NnF te+eC +tC
+  sp|P02760|AMBP_HUMAN 231 CQLGYSAGPCMGMTSRYFYNGTSMACETFQYGGCMGNGNNFVTEKECLQTC 281
+                           8899999******************************************** PP
+
+  == domain 2  score: 68.7 bits;  conditional E-value: 3.6e-22
+            kunitz_mod   1 CklpadtgscrafikrfYYnskekkCerFvYgGcggNeNnFkteeeCrrtC 51 
+                           C+lp   g+crafi+ + +++ ++kC+ F YgGc+gN+N+F++e+eCr++C
+  sp|P02760|AMBP_HUMAN 287 CNLPIVRGPCRAFIQLWAFDAVKGKCVLFPYGGCQGNGNKFYSEKECREYC 337
+                           *************************************************** PP
+
+>> sp|Q90WA1|VKT1_PSETT  Kunitz-type serine protease inhibitor textilinin-1 OS=Pseudonaja textilis textilis OX=169397 PE
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   84.4   6.6   4.3e-27   4.3e-27       1      51 []      31      81 ..      31      81 .. 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 84.4 bits;  conditional E-value: 4.3e-27
+            kunitz_mod  1 CklpadtgscrafikrfYYnskekkCerFvYgGcggNeNnFkteeeCrrtC 51
+                          C+lpadtg+cr ++++fYYn++ekkC++F+YgGc+gN+NnF t+eeC++tC
+  sp|Q90WA1|VKT1_PSETT 31 CELPADTGPCRVRFPSFYYNPDEKKCLEFIYGGCEGNANNFITKEECESTC 81
+                          *************************************************** PP
+
+>> sp|P31713|VKT1_STIHL  PI-stichotoxin-She2a OS=Stichodactyla helianthus OX=6123 PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   80.5   9.6   7.1e-26   7.1e-26       1      51 []       3      53 ..       3      53 .. 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 80.5 bits;  conditional E-value: 7.1e-26
+            kunitz_mod  1 CklpadtgscrafikrfYYnskekkCerFvYgGcggNeNnFkteeeCrrtC 51
+                          C++p+++g+c+++++rfY++s+++kC++F+YgGcggN+NnF+t ++Cr++C
+  sp|P31713|VKT1_STIHL  3 CSEPKKVGRCKGYFPRFYFDSETGKCTPFIYGGCGGNGNNFETLHQCRAIC 53
+                          *************************************************** PP
+
+>> sp|P00980|VKTHA_DENAN  Kunitz-type serine protease inhibitor homolog alpha-dendrotoxin OS=Dendroaspis angusticeps OX=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   77.9  10.1   4.5e-25   4.5e-25       1      51 []       7      57 ..       7      57 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 77.9 bits;  conditional E-value: 4.5e-25
+             kunitz_mod  1 CklpadtgscrafikrfYYnskekkCerFvYgGcggNeNnFkteeeCrrtC 51
+                           C l++++g+c+++i++fYYn+k+k+CerF+++GcggN+N+Fkt+eeCrrtC
+  sp|P00980|VKTHA_DENAN  7 CILHRNPGRCYDKIPAFYYNQKKKQCERFDWSGCGGNSNRFKTIEECRRTC 57
+                           99************************************************* PP
+
+>> sp|A0A1Z0YU59|MAMB1_DENAN  Mambaquaretin-1 OS=Dendroaspis angusticeps OX=8618 PE=1 SV=2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   77.3  11.9   7.3e-25   7.3e-25       1      51 []       5      55 ..       5      55 .. 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 77.3 bits;  conditional E-value: 7.3e-25
+                 kunitz_mod  1 CklpadtgscrafikrfYYnskekkCerFvYgGcggNeNnFkteeeCrrtC 51
+                               C+lp ++g+c +f+++fYY++k++kC++F+YgGc+gN+N+F+t+e+CrrtC
+  sp|A0A1Z0YU59|MAMB1_DENAN  5 CNLPVKPGPCNGFFSAFYYSQKTNKCHSFTYGGCKGNANRFSTIEKCRRTC 55
+                               *************************************************** PP
+
+>> sp|P05067|A4_HUMAN  Amyloid-beta precursor protein OS=Homo sapiens OX=9606 GN=APP PE=1 SV=3
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   75.7   7.6   2.3e-24   2.3e-24       1      51 []     291     341 ..     291     341 .. 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 75.7 bits;  conditional E-value: 2.3e-24
+          kunitz_mod   1 CklpadtgscrafikrfYYnskekkCerFvYgGcggNeNnFkteeeCrrtC 51 
+                         C+++a+tg+cra+i+r+Y++ +e+kC++F+YgGcggN+NnF+tee C+++C
+  sp|P05067|A4_HUMAN 291 CSEQAETGPCRAMISRWYFDVTEGKCAPFFYGGCGGNRNNFDTEEYCMAVC 341
+                         9************************************************** PP
+
+>> sp|P0C1X2|VKTS1_CONST  Kunitz-type conkunitzin-S1 OS=Conus striatus OX=6493 PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   74.6   5.6   5.1e-24   5.1e-24       1      51 []      33      83 ..      33      83 .. 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 74.6 bits;  conditional E-value: 5.1e-24
+             kunitz_mod  1 CklpadtgscrafikrfYYnskekkCerFvYgGcggNeNnFkteeeCrrtC 51
+                           C+lpad+gs++++ kr+YYns++k+C+rF+Y+G+ggNeNnF+++++C+rtC
+  sp|P0C1X2|VKTS1_CONST 33 CDLPADSGSGTKAEKRIYYNSARKQCLRFDYTGQGGNENNFRRTYDCQRTC 83
+                           *************************************************** PP
+
+>> sp|P00974|BPT1_BOVIN  Pancreatic trypsin inhibitor OS=Bos taurus OX=9913 PE=1 SV=2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   74.1   6.7     7e-24     7e-24       1      51 []      40      90 ..      40      90 .. 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 74.1 bits;  conditional E-value: 7e-24
+            kunitz_mod  1 CklpadtgscrafikrfYYnskekkCerFvYgGcggNeNnFkteeeCrrtC 51
+                          C++p+ tg+c+a+i r++Yn+k++ C++FvYgGc++++NnFk++e+C+rtC
+  sp|P00974|BPT1_BOVIN 40 CLEPPYTGPCKARIIRYFYNAKAGLCQTFVYGGCRAKRNNFKSAEDCMRTC 90
+                          *************************************************** PP
+
+>> sp|P81658|VKTHC_DENAN  Kunitz-type serine protease inhibitor homolog calcicludine OS=Dendroaspis angusticeps OX=8618 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   73.9   8.5   8.4e-24   8.4e-24       1      51 []       7      57 ..       7      57 .. 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 73.9 bits;  conditional E-value: 8.4e-24
+             kunitz_mod  1 CklpadtgscrafikrfYYnskekkCerFvYgGcggNeNnFkteeeCrrtC 51
+                           Ck+p ++gsc++++++fY+++++kkC++F+++GcggN+N+F+t+ eCr++C
+  sp|P81658|VKTHC_DENAN  7 CKEPVRIGSCKKQFSSFYFKWTAKKCLPFLFSGCGGNANRFQTIGECRKKC 57
+                           *************************************************** PP
+
+>> sp|P12111|CO6A3_HUMAN  Collagen alpha-3(VI) chain OS=Homo sapiens OX=9606 GN=COL6A3 PE=1 SV=5
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   72.7   9.3   1.9e-23   1.9e-23       1      51 []    3112    3162 ..    3112    3162 .. 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 72.7 bits;  conditional E-value: 1.9e-23
+             kunitz_mod    1 CklpadtgscrafikrfYYnskekkCerFvYgGcggNeNnFkteeeCrrtC 51  
+                             Cklp+d g+cr+fi ++YY++++k+C+rF+YgGcggNeN+F +++eC+++C
+  sp|P12111|CO6A3_HUMAN 3112 CKLPKDEGTCRDFILKWYYDPNTKSCARFWYGGCGGNENKFGSQKECEKVC 3162
+                             *************************************************** PP
+
+>> sp|P00989|VKTH2_BUNMU  Kunitz-type serine protease inhibitor homolog beta-bungarotoxin B2 chain OS=Bungarus multicinc
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   71.9   9.9   3.4e-23   3.4e-23       1      51 []      31      81 ..      31      81 .. 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 71.9 bits;  conditional E-value: 3.4e-23
+             kunitz_mod  1 CklpadtgscrafikrfYYnskekkCerFvYgGcggNeNnFkteeeCrrtC 51
+                           C++p+dt+ c++++++fYY++++k+C++F+YgGc+gN+N+Fk+++ Cr++C
+  sp|P00989|VKTH2_BUNMU 31 CDKPPDTKICQTVVRAFYYKPSAKRCVQFRYGGCNGNGNHFKSDHLCRCEC 81
+                           *************************************************** PP
+
+>> sp|G9I929|VKTA_MICTN  Kunitz-type neurotoxin MitTx-alpha OS=Micrurus tener tener OX=1114302 PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   57.3  10.7   1.3e-18   1.3e-18       1      51 []      31      82 ..      31      82 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 57.3 bits;  conditional E-value: 1.3e-18
+            kunitz_mod  1 Cklpadt.gscrafikrfYYnskekkCerFvYgGcggNeNnFkteeeCrrtC 51
+                          C++++ + + c af++++Y+n+++ +C++F+Yg c++N+N+F+t++eC+r+C
+  sp|G9I929|VKTA_MICTN 31 CYEDPPFfQKCGAFVDSYYFNRSRITCVHFFYGQCDVNQNHFTTMSECNRVC 82
+                          7666665489****************************************** PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (51 nodes)
+Target sequences:                         16  (6288 residues searched)
+Passed MSV filter:                        16  (1); expected 16.0 (1)
+Passed bias filter:                       16  (1); expected 16.0 (1)
+Passed Vit filter:                        16  (1); expected 16.0 (1)
+Passed Fwd filter:                        16  (1); expected 16.0 (1)
+Initial search space (Z):                 16  [actual number of targets]
+Domain search space  (domZ):              16  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.04
+# Mc/sec: 7.71
+//
+[ok]

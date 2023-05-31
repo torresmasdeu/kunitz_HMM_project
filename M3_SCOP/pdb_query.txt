@@ -1,0 +1,1 @@
+( Lineage Identifier = "4003337" AND Annotation Type = "SCOP2" ) AND Refinement Resolution <= 3 AND Polymer Entity Sequence Length = [ 51 - 76 ] AND Polymer Entity Mutation Count = 0

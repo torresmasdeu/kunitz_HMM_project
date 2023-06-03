@@ -160,12 +160,12 @@ awk '{split($9,i,"|"); print i[2],$4}' val_set.out |grep -v -f pos_set.idlist |a
 
 Finally, add all the proteins retrieved from UniProt as non-Kunitz to the class file. To do so, first, get the UniProtIDs that have been a hit against the model:
 ```
-cut -d ' ' -f 1 neg_set.class >neg_set.hits
+cut -d ' ' -f 1 val_set.classn >val_set.idn 
 ```
 
 And lastly, retrieve those IDs that did not appear in the `hmmsearch` output and add them to the class file (with a high E-value, eg `100`, to evidence that they did not match the model):
 ```
-comm -13 <(sort neg_set.hits) <(sort ../UniProt_Swiss-Prot_data/uniprot_sp_nonkunitz.idlist)
+comm -13 <(sort val_set.idn) <(sort ../UniProt_Swiss-Prot_data/uniprot_sp_nonkunitz.idlist) |awk '{print $0,100,0}' >> val_set.classn
 ```
 
 ### 3.2. Cross-validation and Testing sets
